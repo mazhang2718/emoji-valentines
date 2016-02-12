@@ -1,0 +1,572 @@
+
+
+<!DOCTYPE html> 
+<html class="no-js" lang="en"> 
+
+<head> 
+	<meta property="og:url"                content="http://apps.northbynorthwestern.com/vday-emoji/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Valentine's Day Emojis" />
+	<meta property="og:image"              content="emojis/heart.png" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no" />
+    <link rel="shortcut icon" href="http://media.northbynorthwestern.com/media/img/favicon-hi.ico"> 
+    <title>Valentine's Day Emojis</title>
+    <link rel="stylesheet" href="http://apps.northbynorthwestern.com/hungry/styles/22738433.main.css">
+
+    <link rel="stylesheet" href="css/foundation.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/keyboard.css">
+    <link rel="stylesheet" type="text/css" href="css/messages.css">
+    <link rel="stylesheet" type="text/css" href="css/heart.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    <style>
+    footer {
+      float: clear;
+
+    }
+
+    .nbn-footer {
+      width: 100%;
+    }
+    .nbn-footer p{
+      color: white;
+    }
+
+    .nbn-footer strong{
+      color: white;
+    }
+
+    body{
+      background: white;
+    }
+
+    .text{
+      display: none;
+    }
+
+    .img-cont img{
+      display: block;
+      margin: auto;
+    }
+
+    h6 {
+      text-align: right;
+    }
+
+    .ios7 img {
+      height: 10%;
+      width: 10%;
+    }
+
+    </style>
+  </head>
+  <body>
+
+
+<a id="top">
+  <header class="masthead"> 
+    <div class="logo"> 
+      <a href="http://www.northbynorthwestern.com/"><img class="nbn-logo" src="http://media.northbynorthwestern.com.s3.amazonaws.com/uploads/2015/04/25/nbn_logo_black.svg" alt=""></a> 
+    </div> 
+  </header>
+</a> 
+
+<br><br>
+        <div class="rows">
+          <!--
+          <div class="small-3 columns">
+            <img src="emojis/heart.png">
+          </div>
+        -->
+
+          <div class="small-9 small-centered columns" role="content">
+            <hr>
+                     
+            <div class = "bg_heart">
+        
+            <h1> Valentine's Day Emojis </h1>
+            <h3> NBN Life & Style </h3>
+          </div>
+          <hr>
+            
+      			<p>
+      			Want to spice up your love life on Valentine's Day, but have no words to express what you want? Well, words are overrated - NBN's got emojis to cover any situation you might encounter. Check 'em out. </p> 
+ 
+            <br>
+            <h3> Choose an emoji below. </h3>
+            <br>
+
+              </div>
+
+     
+
+        </div> <!-- Row -->
+
+
+
+      <div class="row">
+        <!--<h3> Years: </h3>-->
+        <div class="small-12 small-centered columns">
+
+
+            <div id="content">
+ 
+                <div id="keyboard">
+                  <div class="section lightgrey">
+                    
+                    <input class="input" type="text" value="Choose an Emoji!"></input>
+                    
+                  <div style="clear:left"></div>
+                  <!-- -->
+                  <div class="section">
+                    <div class="button" id="1"><img src="emojis/up.png"></div>
+                    <div class="button" id="2"><img src="emojis/kiss.png"></div>
+                    <div class="button" id="3"><img src="emojis/girl.png"></div>
+                    <div class="button" id="4"><img src="emojis/tongue.png"></div>
+                    <div class="button" id="5"><img src="emojis/sweat.png"></div>
+                    <div class="button" id="6"><img src="emojis/thermometer.png"></div>
+                    <div class="button" id="7"><img src="emojis/head.png"></div>
+                    <div class="button" id="8"><img src="emojis/eyes.png"></div>
+                    <div class="button" id="9"><img src="emojis/cat.png"></div>
+                    <div class="button"><img src="emojis/eggplant.png"></div>
+                  </div>
+                  <div style="clear:left"></div>
+                  <!-- -->
+                  <div class="section">
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                  </div>
+                  <div style="clear:left"></div>
+                  <!-- -->
+                  <div class="section">
+                    <div class="button arrow">
+                      <canvas id="shift" width="36" height="25"></canvas>
+                    </div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button">.</div>
+                    <div class="button arrow">
+                      <canvas id="delete" width="36" height="25"></canvas>
+                    </div>
+                  </div>
+                  <div style="clear:left"></div>
+                    <div class="section">
+                      <div id="number" class="button grey">NBN</div>
+                      <div id="space" class="button"> . </div>
+                      <div id="return" class="button grey">NBN</div>
+                  </div>
+                </div>
+              </div> <!--Keyboard Div-->
+
+            </div>
+
+          </div> <!-- Keyboard Section -->
+        </div> <!-- Row -->
+
+<br>
+<br>
+<br>
+
+
+<div class="row text" id="a1">
+
+  <div class = "small-12 large-6 columns">
+    <div class="img-cont">
+    <img src="emojis/up.png" >
+  </div>
+
+    <p> The pointed finger is a versatile emoji when it comes to your and your partner’s sexual needs. It can refer to several sexual acts, the most obvious one being consensual intercourse. During coitus, there is truly no better use for one’s finger than asking for consent. As communicated during Wildcat Welcome to new Northwestern students, the best way to ask for consent is to hover one’s pointer finger in close proximity to your potential partner’s body and recite the words, “Can I touch you?” However, for the sake of convenience, this emoji, followed by a question mark is the perfect text to place both you and your partner on the same page. Other uses include, but are not limited to, requesting a moment to consider a sexual proposition and gesturing to the heavens to indicate level of sexual pleasure.
+    </p>
+
+        <h6> - Simran Chadha </h6>
+    <br>
+
+    <h3> </h3>
+    </div>
+
+    <div class = "small-12 large-6 columns">
+
+      
+      <dl class="ios7">
+
+        <dt><strong>Sun, Feb 14</strong> 7:45 PM</dt>
+        <dd class="to">
+          <p><img src="emojis/up.png"></p>
+        </dd>
+        <dd class="from">
+          <p>Yes.</p>
+        </dd>
+        <dd class="to">
+          <p>Biking over, c u in 3 min. You’ll be <img src="emojis/up.png"> after this ;)</p>
+        </dd>
+
+    </div>
+
+
+</div>
+
+<div class="row text" id="a2">
+
+  <div class = "small-12 large-6 columns">
+
+    <div class="img-cont">
+    <img src="emojis/kiss.png" >
+  </div>
+
+    <p> The art of flirting lies in coyness. While the winky-face and heart-eyes emojis are best fit for late night booty calls or a new relationship, you need to hold the allure and mystery with new PB’s (potential baes). Whether it’s your lab partner or the hottie from SPAC, hit ‘em with this emoji when you’re ending the conversation or pair it with a flirty joke. A kiss seals the deal.
+
+
+    </p>
+
+    <h6> - Morgan Smith </h6>
+
+    </div>
+
+    <div class = "small-12 large-6 columns">
+
+      
+      <dl class="ios7">
+
+        <dt><strong>Sun, Feb 14</strong> 6:33 PM</dt>
+        <dd class="to">
+          <p>how's your day going? seems like its missing something</p>
+        </dd>
+        <dd class="from">
+          <p>what's it missing?</p>
+        </dd>
+        <dd class="to">
+          <p>me</p>
+        </dd>
+        <dd class="to">
+          <p><img src="emojis/kiss.png"></p>
+        </dd>
+
+
+  </div>
+
+
+</div>
+
+
+<div class="row text" id="a3">
+
+  <div class = "small-12 large-6 columns">
+      <img src="emojis/girl.png" width="30%">
+    <img src="emojis/tongue.png" width = "30%" >
+    <img src="emojis/sweat.png" width="30%" >
+
+    <p> This one is for all the ladies out there ready to get some pleasure because yes, girls also like to have sex, and yes, we enjoy it very much. But for many girls, it can be hard to hint at some tongue action in the nether regions. How do I tell my Tinder date I want him to lay me down and make waterfalls pour out of me? It’s simple: send him this combo of emojis and let him know that one, you are a woman ready to have her needs met because guys shouldn’t be the only ones feeling high off of sex. Two, that tongue better do its workouts because it’ll need to do some good maneuvering to hit the right spot. And three, we expect to cum. If you don’t make us cum, why should we help you cum? Ladies, be confident, be safe, and let them know what you really want. 
+    </p>
+
+        <h6> - Rita Oceguera </h6>
+    <br>
+
+    <h3> </h3>
+    </div>
+
+    <div class = "small-12 large-6 columns">
+
+      
+      <dl class="ios7">
+
+        <dt><strong>Sun, Feb 14</strong> 1:13 PM</dt>
+        <dd class="from">
+          <p>Hey</p>
+          <p>Do you want to come over my place for a bit before dinner tonight?</p>
+        </dd>
+        <dd class="to">
+          <p>Why? You want to pregame? <img src="emojis/girl.png"> <img src="emojis/tongue.png"> <img src="emojis/sweat.png"></p>
+        </dd>
+        <dd class="from">
+          <p><img src="emojis/monkey.png"></p>
+          <p>I don’t mind having something sweet before dinner <img src="emojis/wink.png"></p>
+        </dd>
+        <dd class="to">
+          <p><img src="emojis/wink.png"></p>
+        </dd>
+
+    </div>
+
+
+</div>
+
+<div class="row text" id="a6">
+
+  <div class = "small-12 large-6 columns">
+      <div class="img-cont">
+    <img src="emojis/thermometer.png" >
+  </div>
+
+    <p> The thermometer emoji is a fundamental part of all romantic texting. In general, it means “Things are heating up”, but this could be interpreted in a variety of ways. It could mean that your relationship is heating up, and maybe it’s time to talk getting serious. But it can also be used in the context of that specific conversation, signifying things are getting hot and heavy. Maybe your vocabulary is starting to get a bit steamy and you’re ready to take this convo to the next level. Who knows what the thermometer could have in store for you? 
+    </p>
+
+        <h6> - Andie Linker </h6>
+    <br>
+
+    <h3> </h3>
+    </div>
+
+    <div class = "small-12 large-6 columns">
+
+      
+      <dl class="ios7">
+
+        <dt><strong>Sun, Feb 14</strong> 1:13 PM</dt>
+        <dd class="from">
+          <p>I was thinking maybe we could grab dinner tonight</p>
+        </dd>
+        <dd class="to">
+          <p> Is this getting serious? <img src="emojis/thermometer.png"> </p>
+        </dd>
+        <dd class="from">
+          <p>Send pics?</p>
+        </dd>
+        <dd class="to">
+          <p><img src="emojis/thermometer.png"><img src="emojis/thermometer.png"><img src="emojis/thermometer.png"></p>
+        </dd>
+
+    </div>
+
+
+</div>
+
+
+<div class="row text" id="a7">
+
+  <div class = "small-12 large-6 columns">
+      <div class="img-cont">
+    <img src="emojis/head.png" >
+  </div>
+
+    <p> If you think the eggplant is too cliché and you find the tongue-out winking face vulgar, it’s time to turn to the thinking man’s emoji: The floating grey head. Versatile, yet pointed. Subtle, yet sensual. When you want to ask your partner to head downstairs without coming off as a complete pig, this disembodied noggin is here to do the talking for you. The exclamation lines coming from its gaping maw can be interpreted as moans of pleasure or that last deep breath you take before getting down to business, depending on what you’re into.
+    </p>
+
+        <h6> - Katherine Way </h6>
+    <br>
+
+    <h3> </h3>
+    </div>
+
+    <div class = "small-12 large-6 columns">
+
+      
+      <dl class="ios7">
+
+        <dt><strong>Sun, Feb 14</strong> 4:20 PM</dt>
+        <dd class="to">
+          <p>Hey lady, how's about me and you grab some drinks tonight and then maybe take it back to my place for some  <img src="emojis/head.png" > ? </p>
+        </dd>
+        <dd class="from">
+          <p> Who is this? </p>
+        </dd>
+        <dd class="to">
+          <p>Fuck</p>
+        </dd>
+
+    </div>
+
+
+</div>
+
+<div class="row text" id="a8">
+
+  <div class = "small-12 large-6 columns">
+      <div class="img-cont">
+    <img src="emojis/eyes.png" >
+  </div>
+
+    <p> This week I just received an email from my Australian host family “father” when I visited the country seven years ago. He meant to check-in on my love life because, well, Valentine’s Day is coming. My “father” finished off with words of wisdom based on his 88 years of life experience: boys and men think with their eyes.Thanks, dad. Eyes, as the windows to the soul, can always tell so many things about the mind. Just look at the way this emoji stares sideways, apparently spotting an attractive creature, and the way it opens its eyes to the maximum as if trying see through some clothing. This look vividly represents the eyes of many men when there’s a hottie with walking by. People may remain motionless in an attempt to conceal their thoughts, yet the eye movements have already exposed their intentions in plain sight. Sometimes just by looking at a someone’s eyes, one can tell what the person sees, or in fact, what the person wants to see. 
+    </p>
+
+        <h6> - Isabella Jiao </h6>
+    <br>
+
+    <h3> </h3>
+    </div>
+
+    <div class = "small-12 large-6 columns">
+
+      
+      <dl class="ios7">
+
+        <dt><strong>Sun, Feb 14</strong> 4:20 PM</dt>
+        <dd class="to">
+          <p><img src="emojis/eyes.png" ><img src="emojis/peach.png" ><img src="emojis/hand.png" ></p>
+        </dd>
+        <dd class="from">
+          <p> (I want to see that...and spank it!)</p>
+        </dd>
+    </div>
+
+
+</div>
+
+
+<div class="row text" id="a9">
+
+  <div class = "small-12 large-6 columns">
+      <div class="img-cont">
+    <img src="emojis/cat.png" >
+  </div>
+
+    <p> When it comes to using emojis in a sexual context, everyone knows the eggplant is the go-to phallic emoji. But have you ever thought about the lack of a clear presence of a go-to vaginal emoji? So sexist, am I right? Never fear, I’m here to help you with a list of vagina emojis: the cat faces. This totally makes sense, because they’re pussies. Like what else would you use? The new taco emoji? Yeah, I don’t think so. 
+    </p>
+
+   <p> 😿 when you’re sad because you’re on your period </p> <p>
+😹 when you’re wet </p> <p>
+😼 when you’re about to get laid </p> <p>
+😽 WHEN YOU GET GOOD HEAD </p> <p>
+😻 when your vagina is in love with someone (this does not necessarily have to correlate to your brain’s emotions about said person) </p> <p>
+🙀 when the dick is just too big </p> 
+
+        <h6> - Carmel Mu </h6>
+    <br>
+
+    <h3> </h3>
+    </div>
+
+    <div class = "small-12 large-6 columns">
+
+      
+      <dl class="ios7">
+
+        <dt><strong>Sun, Feb 14</strong> 6:09 PM</dt>
+        <dd class="from">
+          <p> come over baby let me make you <img src="emojis/wet.png"></p>
+        </dd>
+        <dd class="to">
+          <p>ugh i wish i could 😻 but not tonight sorry</p>
+        </dd>
+        <dd class="from">
+          <p> why not thooo there’ll be 😽</p>
+        </dd>
+        <dd class="to">
+          <p>ugh because 😿</p>
+        </dd>
+    </div>
+
+
+</div>
+    <!--</div>-->
+
+    
+    <footer class="nbn-footer"> <div class="container"> <div class="credits shift-left"> <p><strong>Published on February 14, 2016</strong></p> <p><strong>Design and Development</strong>: Matthew Zhang<p> <p>&copy; 2016 <a href="http://www.northbynorthwestern.com/">North by Northwestern</a></p> </div> </div> </footer>
+
+
+    <script src="http://projects.delimited.io/experiments/chord-transitions/bower_components/foundation/js/foundation.min.js"></script>
+
+ 
+
+
+
+
+
+    <script>
+      $(document).foundation();
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+          $('#1').on('click', function()  {
+              $("#a1").removeClass("text");
+              $("#a2").addClass("text");
+              $("#a3").addClass("text");
+              $("#a6").addClass("text");
+              $("#a7").addClass("text");
+              $("#a8").addClass("text");
+              $("#a9").addClass("text");
+
+          });
+
+          $('#2').on('click', function()  {
+              $("#a1").addClass("text");
+              $("#a2").removeClass("text");
+              $("#a3").addClass("text");
+              $("#a3").addClass("text");
+              $("#a7").addClass("text");
+              $("#a8").addClass("text");
+              $("#a9").addClass("text");
+          });
+
+          $('#3, #4, #5').on('click', function()  {
+              $("#a1").addClass("text");
+              $("#a2").addClass("text");
+              $("#a3").removeClass("text");
+              $("#a6").addClass("text");
+              $("#a7").addClass("text");
+              $("#a8").addClass("text");
+              $("#a9").addClass("text");
+          });
+
+          $('#6').on('click', function()  {
+              $("#a1").addClass("text");
+              $("#a2").addClass("text");
+              $("#a3").addClass("text");
+              $("#a6").removeClass("text");
+              $("#a7").addClass("text");
+              $("#a8").addClass("text");
+              $("#a9").addClass("text");
+          });
+
+          $('#7').on('click', function()  {
+              $("#a1").addClass("text");
+              $("#a2").addClass("text");
+              $("#a3").addClass("text");
+              $("#a6").addClass("text");
+              $("#a8").addClass("text");
+              $("#a7").removeClass("text");
+              $("#a9").addClass("text");
+          });
+
+          $('#8').on('click', function()  {
+              $("#a1").addClass("text");
+              $("#a2").addClass("text");
+              $("#a3").addClass("text");
+              $("#a6").addClass("text");
+              $("#a7").addClass("text");
+              $("#a8").removeClass("text");
+              $("#a9").addClass("text");
+          });
+
+           $('#9').on('click', function()  {
+              $("#a1").addClass("text");
+              $("#a2").addClass("text");
+              $("#a3").addClass("text");
+              $("#a6").addClass("text");
+              $("#a7").addClass("text");
+              $("#a9").removeClass("text");
+              $("#a8").addClass("text");
+          });
+
+
+
+      });
+    </script>
+
+    <script type="text/javascript" src="js/heart.js"></script>
+    <script type="text/javascript" src="js/keyboard.js"></script>
+
+
+
+  </body>
+</html>
